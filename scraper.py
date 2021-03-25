@@ -34,9 +34,3 @@ al_off = get_offensive_stat("https://www.sports-reference.com/cfb/schools/alabam
 
 ten_def = get_defensive_stat("https://www.sports-reference.com/cfb/schools/tennessee/2020.html")
 ten_off = get_offensive_stat("https://www.sports-reference.com/cfb/schools/tennessee/2020.html")
-
-
-print(ky_def)
-print(ten_def, ten_off)
-
-print(al_off)

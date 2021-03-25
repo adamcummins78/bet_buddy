@@ -1,6 +1,8 @@
 import datetime
+from countdown import cfbCountDown
+from scraper import ga_def, ga_off, ky_def, ky_off, al_def, al_off, ten_def, ten_off
 
-def buildMenu():
+def buildMenu(): 
     user = input("Please enter your name:  ")
     while(True):
         print("\n")
@@ -9,14 +11,13 @@ def buildMenu():
         print("=" * 54)
         print(f"Welcome to Bet Buddy, {user}! (College Football Edition)")
         print()
-        print("   It is WEEK ONE of the college football season.") #I want this section to print out what week of the college football season it is based of datetime entry
+        cfbCountDown() #I want this section to print out what week of the college football season it is based of datetime entry
         print("=" * 54)
         print("=" * 54)
         print("=" * 54)
-        print("\n")
+        print("Selection:\n1. Kentucky\n2. Gerogia\n3. Alabama\n4. Tennesse")
 
-
-        team = input("Please enter the first team you would like to compare, or q to quit:  ")
+        team = input("Please enter the number for first team you would like to compare, or q to quit:  ")
         if(team == "q"):
             exit()
         team_two = input("Please enter the second team you would like to compare:  ")

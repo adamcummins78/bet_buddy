@@ -3,7 +3,6 @@ import time
 import re
 from bs4 import BeautifulSoup
 
-#Stats Website
 
 def get_defensive_stat(url):
     #Link URL and search through HTML
@@ -23,6 +22,7 @@ def get_offensive_stat(url):
     
     return float(stat)
 
+    #Scrapes the sports stats for respective team (This will have to be updated each year)
 ga_def = get_defensive_stat("https://www.sports-reference.com/cfb/schools/georgia/2020.html")
 ga_off = get_offensive_stat("https://www.sports-reference.com/cfb/schools/georgia/2020.html")
 

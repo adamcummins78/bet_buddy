@@ -4,6 +4,7 @@ from scraper import ga_def, ga_off, ky_def, ky_off, al_def, al_off, ten_def, ten
 
 def buildMenu(): 
     user = input("Please enter your name:  ")
+    # This is the master loop
     while(True):
         print("\n")
         print("=" * 54)
@@ -17,7 +18,7 @@ def buildMenu():
         print("=" * 54)
         print("Selection:\n Kentucky (Enter: UK)\n Georgia (Enter: UGA)\n Alabama (Enter: AL)\n Tennesse (Enter: TN)")
 
-        team = input("Please enter the number for first team you would like to compare, or q to quit:  ").upper()
+        team = input("Please enter the first team you would like to compare, or q to quit:  ").upper()
         if(team == "Q"):
             exit()
         team_two = input("Please enter the second team you would like to compare:  ").upper()
